@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Pressable } from 'react-native'
 import React from 'react'
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated'
-const GrowButton = () => {
+const GrowButton: () => React.JSX.Element = () => {
     const scale = useSharedValue(1);
     const animatedStyle = useAnimatedStyle(() => {
         return {
